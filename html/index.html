@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Selina Kallio" name="author">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../javascript/main.js"></script>
+    <title>Jade and babe</title>
+</head>
+<body>
+    <div id="headers">
+        <a href="index.html"><img id="logo" src="../images/meowo_logo.jpg" ></a>
+        <div id="header1">
+            <h1>MEOWO</h1>
+            <h2>Jade the cat and her offspring</h2>
+        </div>
+        <div id="header2">
+            <nav class="menu">
+                <a href="which_cat.html" class="item_menu1">Which cat are you?</a>
+                <a href="donate.html" class="item_menu">Donate</a>
+                <a href="nl.html" class="item_menu">Sign up for our newsletter</a>
+                <a href="contact.html" class="item_menu">Contact us</a>
+            </nav>
+            <nav>
+                <div class="navbar">
+                  <div class="container nav-container">
+                      <input class="checkbox" type="checkbox" name="" id="" />
+                      <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                      </div>  
+                    <div class="menu_items">
+                      <li><h4 class="rh4">Jade the cat and her offspring</h4></li>
+                      <li><a href="which_cat.html">Which cat are you?</a></li>
+                      <li><a href="donate.html">Donate</a></li>
+                      <li><a href="nl.html">Sign up for our newsletter</a></li>
+                      <li><a href="contact.html">Contact us</a></li>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+                
+    </div>
+<div class="margin imageCycle">   
+        <div>
+            <img class="ssImages" src="../images/all_cats/4f93dc7c-7d80-4f42-8346-416f18c9c9a3.jpg">
+            <img class="ssImages" src="../images/all_cats/57156f7a-31f5-46a0-a965-d68ec8e681f2.jpg">
+            <img class="ssImages" src="../images/all_cats/c117204f-b66b-42a9-852b-b8e9efdc7fdb.jpg">
+            <img class="ssImages" src="../images/pökö/6101557a-53a2-4e4b-bfed-bee6206b6e58.jpg">
+            <img class="ssImages" src="../images/pökö/6e2ed04a-9a33-4955-994e-1af6eeba3dff.jpg">
+            <img class="ssImages" src="../images/pökö/88ff07ac-c750-4d2a-ba32-704ee152e317.jpg">
+            <img class="ssImages" src="../images/nyyti/71cf1f94-6ab9-4d1c-9a20-42a140382d5b.jpg">
+            <img class="ssImages" src="../images/pökö/07f9cb71-37bb-4551-ae76-d3fa4c620ff4.jpg">
+        </div>
+            
+        <script>
+            var index = 0;
+            imageLoop();
+            
+        function imageLoop() {
+        var i;
+        var x = document.getElementsByClassName("ssImages");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {index = 1}
+        x[index-1].style.display = "block";
+        setTimeout(imageLoop, 4000);
+        }
+            </script>
+</div> 
+    <main class="margin">
+
+<div id="cat_information">
+    <!-- show cats_table in only PC mode -->     
+    <h2 id="kit_info">Some info about the kitties</h2>
+<table id="cats_table">
+    <tr>
+        <th class="topic">Cat</th>
+        <th>Jade
+            <br>
+            <img class="cat_intro_pic" src="../images/jade/a14f8227-495c-45b4-8e1a-8658b53ad23a.jpg" alt="jade photo">
+        </th>
+        <th>Pökö
+            <br>
+            <img class="cat_intro_pic" src="../images/pökö/c0b6d830-fa58-4c8c-abdf-f8fdb470e8a5.jpg" alt="pökö photo">
+        </th>
+        <th>Karhu
+            <br>
+            <img class="cat_intro_pic" src="../images/karhu/b6870588-7443-4934-9fb4-dd82af97f5a5.jpg" alt="karhu photo">
+        </th>
+        <th>Manuel "Manu"
+            <br>
+            <img class="cat_intro_pic" src="../images/manu/bcf9f632-7f05-411c-9358-c7298d2027cc.jpg" alt="manu photo"></th>
+        <th>Nyyti
+            <br>
+            <img class="cat_intro_pic" src="../images/nyyti/6e4c6749-92de-44c6-a415-0dcfd01d8391.jpg" alt="nyyti photo"></th>
+        <th>Japp
+            <br>
+            <img class="cat_intro_pic" src="../images/japp/be70ca3a-acb4-43fd-9743-275dcbf10b21.jpg" alt="japp photo"></th>
+    </tr>
+    <tr id="gender">
+        <td class="topic">Gender</td>
+        <td class="cat_gen"> &#9792;</td>
+        <td class="cat_gen"> &#9792;</td>
+        <td class="cat_gen"> &#9794;</td>
+        <td class="cat_gen"> &#9794;</td>
+        <td class="cat_gen"> &#9792;</td>
+        <td class="cat_gen"> &#9794;</td>
+    </tr>
+    <tr>
+        <td class="topic">Weight
+            <p id="weight_info">at 8 weeks</p>
+        </td>
+        <td class="weight">N/A, when she gave birth she weighed 4.5kg</td>
+        <td class="baby_weight">925g</td>
+        <td class="baby_weight">991g</td>
+        <td class="baby_weight">1020g</td>
+        <td class="baby_weight">972g</td>
+        <td class="baby_weight">1307g</td>
+    </tr>
+    <tr>
+        <td class="topic">Description</td>
+        <td class="desc">Criminal mastermind, stay-at-home mother of five teenagers</td>
+        <td class="desc">Cute little terrorist, always on the run but adorable when sleeping</td>
+        <td class="desc">Hates all living things, a.k.a. Pogrider</td>
+        <td class="desc">Handsome young man, playful and peaceful</td>
+        <td class="desc">Pathetic, likes to be held and cuddled; sickly and adorable</td>
+        <td class="desc">Fun and nice but sometimes ugly kitty</td>
+    </tr>
+</table>
+    
+
+<div id="mobile_cat_ss2">
+    <div class="mob_container">
+        <div class="mySlides">
+          <img src="../images/jade/a14f8227-495c-45b4-8e1a-8658b53ad23a.jpg">
+          <div class="info_small"><h1>&#9792;</h1> <p>Weight when giving birth: <strong>4.5kg</strong></p><br><p>Criminal mastermind, stay-at-home mother of five teenagers</p><br></div>
+        </div>
+      
+        <div class="mySlides">
+          <img src="../images/pökö/c0b6d830-fa58-4c8c-abdf-f8fdb470e8a5.jpg">
+          <div class="info_small"><h1>&#9792;</h1> <p>Weight at 8 weeks: <strong>925g</strong></p><br><p>Cute little terrorist, always on the run but adorable when sleeping</p><br></div>
+        </div>
+      
+        <div class="mySlides">
+          <img src="../images/karhu/b6870588-7443-4934-9fb4-dd82af97f5a5.jpg">
+          <div class="info_small"><h1>&#9794;</h1> <p>Weight at 8 weeks: <strong>991g</strong></p><br><p>Hates all living things, a.k.a. Pogrider</p><br></div>
+        </div>
+          
+        <div class="mySlides">
+          <img src="../images/manu/bcf9f632-7f05-411c-9358-c7298d2027cc.jpg">
+          <div class="info_small"><h1>&#9794;</h1> <p>Weight at 8 weeks: <strong>1020g</strong></p><br><p>Handsome young man, playful and peacefuls</p><br></div>
+        </div>
+      
+        <div class="mySlides">
+          <img src="../images/nyyti/6e4c6749-92de-44c6-a415-0dcfd01d8391.jpg">
+          <div class="info_small"><h1>&#9792;</h1> <p>Weight at 8 weeks: <strong>972g</strong></p><br><p>Pathetic, likes to be held and cuddled; sickly and adorable</p><br></div>
+        </div>
+          
+        <div class="mySlides">
+          <img src="../images/japp/be70ca3a-acb4-43fd-9743-275dcbf10b21.jpg">
+          <div class="info_small"><h1>&#9794;</h1> <p>Weight at 8 weeks: <strong>1307g</strong></p><br><p>Fun and nice but sometimes ugly kitty</p><br></div>
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="../images/jade/a14f8227-495c-45b4-8e1a-8658b53ad23a.jpg" onclick="currentSlide(1)" alt="Jade">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../images/pökö/c0b6d830-fa58-4c8c-abdf-f8fdb470e8a5.jpg" onclick="currentSlide(2)" alt="Pökö">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../images/karhu/b6870588-7443-4934-9fb4-dd82af97f5a5.jpg" onclick="currentSlide(3)" alt="Karhu">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../images/manu/bcf9f632-7f05-411c-9358-c7298d2027cc.jpg" onclick="currentSlide(4)" alt="Manu">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../images/nyyti/6e4c6749-92de-44c6-a415-0dcfd01d8391.jpg" onclick="currentSlide(5)" alt="Nyyti">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="../images/japp/be70ca3a-acb4-43fd-9743-275dcbf10b21.jpg" onclick="currentSlide(6)" alt="Japp">
+          </div>
+        </div>
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+
+      }
+      </script>
+
+    </div>  
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>

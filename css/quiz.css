@@ -1,0 +1,134 @@
+.begin>h1{
+    margin-top: 5%;
+}
+
+body{
+    font-family: "Comic Sans MS";
+}
+
+.button{
+    background-color: #ffe6ff;
+    padding: 5% 10%;
+    text-align: center;
+    display: inline-block;
+    font-size: x-large;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #e278fd;
+    border: 2px solid #e278fd;
+    margin: 2%;
+}
+
+.button:hover{
+    background-image: repeating-linear-gradient(to left,#f0b8fd, #fdb5c2, #f0b8fd);
+    color: #ffe6ff;
+}
+
+.button_middle:hover{
+    background-image: repeating-linear-gradient(to left, #8d8f8d, #e278fd);
+}
+
+.quiz_table{
+    margin-right: 5%;
+    width: 85%;
+    align-content: center;
+    align-self: center;
+
+}
+
+.button_s{
+    padding: 16px 32px;
+    background-color: #ffe6ff;
+    text-align: center;
+    display: inline-block;
+    font-size: x-large;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    color: #e278fd;
+    border: 2px solid #e278fd;
+    margin: 2%;
+}
+
+.quiz_table>tr>td{
+    height: 50em;
+    margin-right: auto;
+    margin-left: auto;
+    object-fit: cover;
+    border-style: dotted;
+    box-shadow: 3px 3px 10px #e278fd, 10px 10px 10px #8d8f8d, 15px 15px 10px #f0b8fd;
+    border-radius: 70px;
+    overflow: hidden;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+td:nth-child(odd) {
+    background-image: repeating-linear-gradient(to left, #8d8f8d, #e278fd);
+}
+
+#which-h2{
+    font-size: large;
+}
+
+.final_test{
+    width: 80%;
+}
+
+.final_test>img{
+    width: 60%;
+    border-bottom: 10%;
+    border-radius: 50px;
+
+}
+
+h2{
+    font-size: large;
+ }
+
+
+/** media tags/queries for responsiveness **/
+@media only screen and (max-width: 1000px) {
+    button>img{
+        display: none;
+    }
+
+    td{
+        width: 33%;
+    }
+
+    td>a{
+       width: 100%;
+       
+    }
+
+    .button{
+        width: 100%;
+        margin: 0%;
+        height: 7rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: large !important;
+    }
+
+    h2{
+        font-size: medium !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    td{
+        display: flex;
+        width: 100%;
+    }
+
+    .button{
+        height: auto;
+    }
+}
