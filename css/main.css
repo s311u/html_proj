@@ -771,6 +771,18 @@ opacity: 1;
     .contact-websites{
         margin-bottom: 15%;
     }
+
+	footer{
+    display: none !important;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin:0 auto;
+    overflow:hidden;
+    align-self: center;
+    background-image: none;
+    padding-bottom: 5.5rem;
+}
 }
 
 @media only screen and (max-width: 500px){
