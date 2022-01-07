@@ -730,6 +730,10 @@ opacity: 1;
     footer{
         display: none !important;
     }
+	
+    main{
+        padding-bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 800px){
