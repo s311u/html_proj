@@ -726,6 +726,10 @@ opacity: 1;
     .contact-margin{
         margin-right: 5%;
     }
+
+    footer{
+        display: none !important;
+    }
 }
 
 @media only screen and (max-width: 800px){
@@ -772,11 +776,6 @@ opacity: 1;
 
     .contact-websites{
         margin-bottom: 15%;
-    }
-    
-    footer{
-        display: none !important;
-        background-image: none !important;
     }
 }
 
