@@ -638,7 +638,7 @@ opacity: 1;
     
     .navbar .menu_items {
     padding-top: 10%;
-    box-shadow: inset 0 0 1000px white;
+    box-shadow: inset 0 0 1000px lightgray;
     height: auto;
     width: 100%;
     display: none;
